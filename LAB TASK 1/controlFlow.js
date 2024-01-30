@@ -21,3 +21,22 @@ switch(true){
         status = "hobe kichu ekta";
 }
 console.log(status);
+
+//loops (for and while and do while)
+let x = ['a', 'b', 'c', 'd'];
+let y = ['s', 'h', 'i', 't'];
+for (let i=0; i<2; i++){
+    console.log(x[i]);
+} 
+
+let i = 0;
+while (i<4){
+    console.log(y[i]);
+    i++;
+}
+
+let j= 0;
+do{
+    console.log(x[j]);
+    j++;
+}while(j<2);
