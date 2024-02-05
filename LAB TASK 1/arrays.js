@@ -27,6 +27,7 @@ console.log(numbers);
 console.log(fruits);
 
 //Array iteration, forEach function
+console.log("for each function");
 let newNumbers = [2, 3, 5, 7]
 newNumbers.forEach(function(number){
     console.log(number);
@@ -38,6 +39,7 @@ let doubleNumbers = numbers.map(function(number){
 })
 console.log(doubleNumbers);
 
+//filter method
 const evenNumbers = numbers.filter(function(num){
     return num % 2 === 0;
 });
