@@ -37,3 +37,32 @@ function addnumbers(a:number, b:number):number{
     return a+b;
 }
 console.log(addnumbers(10, 20));
+
+//arrow functions
+let addNumbers=(a:number, b:number):number=>a+b;
+console.log(addNumbers(10, 20));
+
+//optional parameters
+function addNum(a:number, b:number, c?: number):number{
+    return a+b+(c??0);
+}
+console.log(addNum);
+
+//rest parameters
+function addnum(...nums:number[]):number{
+    let sum:number=0;
+    for(let num of nums){
+        sum+=num;
+    }
+    return sum;
+}
+console.log(sum);
+
+//function overloading
+function addNumberss(a:number, b:number):number;
+function addNumberss(a:string, b:string):string;
+function addNumberss(a:any, b:any):any{
+    return a+b;
+}
+console.log(addNumberss(10, 20));
+
