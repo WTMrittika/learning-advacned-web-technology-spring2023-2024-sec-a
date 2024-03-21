@@ -1,6 +1,6 @@
 let numbers =[1,2,3,4,5];
 let fruits =['Mango','Watermelon','Lichi'];
-//number, striing, object, array in one array
+//number, string, object, array in one array
 let mixedArray = [1, 'two', {name: 'Alice'}, [7, 8, 9]];
 
 console.log(numbers);
@@ -16,6 +16,7 @@ let secondFruit = fruits[1];
 console.log(secondFruit);
 let thirdElement = mixedArray[2];
 console.log(thirdElement);
+console.log(mixedArray[2]);
 
 //Adding and removing arrays (Array methods)
 numbers.push(6);
@@ -27,20 +28,20 @@ console.log(numbers);
 console.log(fruits);
 
 //Array iteration, forEach function
-console.log("for each function");
+console.log("forEach function");
 let newNumbers = [2, 3, 5, 7]
 newNumbers.forEach(function(number){
     console.log(number);
 });
 
 //Array iteration map
-let doubleNumbers = numbers.map(function(number){
+let doubleNumbers = newNumbers.map(function(number){
     return number * 2;
 })
 console.log(doubleNumbers);
 
 //filter method
-const evenNumbers = numbers.filter(function(num){
+const evenNumbers = newNumbers.filter(function(num){
     return num % 2 === 0;
 });
 console.log(evenNumbers);
