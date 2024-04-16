@@ -22,7 +22,7 @@ switch(true){
 }
 console.log(status);
 
-//loops (for and while and do while)
+//loops (for, while and do while)
 let x = ['a', 'b', 'c', 'd'];
 let y = ['s', 'h', 'i', 't'];
 for (let i=0; i<2; i++){
